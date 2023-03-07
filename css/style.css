@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 25px;
   font-weight: 500;
   padding: 20px;
 }
@@ -56,8 +56,8 @@ li {
   display: inline-block;
 }
 
-.active {
-  text-decoration: rgb(164, 50, 187) underline;
+.active{
+  text-decoration:rgb(164, 50, 187) underline;
   text-underline-offset: 16px;
 }
 
@@ -72,7 +72,7 @@ nav a {
 nav ul li {
   display: inline;
   padding: 20px 20px 20px 20px;
-  margin: 150px 0px 100px 180px;
+  margin: 150px 0px 150px 150px;
   font-size: 20px;
 }
 
@@ -142,3 +142,55 @@ i {
     padding-bottom: 10px;
   }
 }
+
+.grid {
+  width: 90%;
+  margin: auto;
+  border-radius: 30px;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+.grid div {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 30%; 
+  margin-bottom: 20px; 
+}
+
+.grid img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.grid ul li{
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-top: 0px;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .grid div {
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+@media only screen and (min-width: 601px) {
+  .grid{
+    grid-template-columns: 30% 30% 30%;
+  }
+}}
+
