@@ -1,0 +1,144 @@
+body {
+  padding: 10px;
+  background-color: #f6f6ef;
+  font-size: 125%;
+}
+
+h1 {
+  color: #65277d;
+  font-size: 60px;
+  padding: 10px;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+  padding: 20px;
+}
+
+img {
+  width: 90%;
+  padding: 20px;
+  margin: 5px 10px 20px 15px;
+  border: solid #d9b2dc 5px;
+  border-radius: 10%;
+}
+
+dt {
+  font-size: 200%;
+}
+
+dd {
+  font-size: 24px;
+}
+footer {
+  background: linear-gradient(
+    90deg,
+    #eae7ee 0%,
+    #d0c8dd 25%,
+    #bea0de 70%,
+    #a681c4 100%
+  );
+  font-size: 15px;
+}
+
+li {
+  display: inline-block;
+}
+
+.active {
+  text-decoration: rgb(164, 50, 187) underline;
+  text-underline-offset: 16px;
+}
+
+img:hover {
+  opacity: 0.3;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline;
+  padding: 20px 20px 20px 20px;
+  margin: 150px 0px 100px 180px;
+  font-size: 20px;
+}
+
+img:nth-child(2n + 1) {
+  box-shadow: 10px 0px 10px rgb(171, 110, 179),
+    -10px 0px 10px rgb(171, 102, 196);
+}
+
+body {
+  background-image: url(../images/background.jpeg);
+  font-family: "Open Sans", sans-serif;
+}
+
+i {
+  padding: 4px;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    animation: tada 1s;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+    font-size: 1rem;
+  }
+
+  @keyframes tada {
+    from {
+        transform: scale3d(1, 1, 1)
+    }
+    10%, 20% {
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    }
+    30%, 50%, 70%, 90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    }
+    40%, 60%, 80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    }
+    to {
+        transform: scale3d(1, 1, 1)
+    }
+  }
+
+  dl {
+    padding-top: 10px;
+  }
+
+  dt {
+    font-size: 1.5rem;
+  }
+
+  dd {
+    font-size: 1rem;
+  }
+  
+  p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
